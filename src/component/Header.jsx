@@ -9,16 +9,14 @@ import Profile from '../assets/profile.svg';
 import ArrowLeft from '../assets/arrow-left.svg';
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+ 
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  
 
   return (
     <div className="header">
       <nav>
-      <button className="menu-button" onClick={toggleMenu}>
+      <button className="menu-button">
           ☰
         </button>
         <img src={Logo} className="navbar--logo" alt="Logo" />
@@ -33,7 +31,7 @@ const Header = () => {
         </div>
         
       </nav>
-      {menuOpen && (
+      
         <div className="LIST">
           <h4>SHOP</h4>
           <h4>SKILLS</h4>
@@ -41,7 +39,7 @@ const Header = () => {
           <h4>ABOUT</h4>
           <h4>CONTACT US</h4>
         </div>
-      )}
+      
     </div>
   );
 };

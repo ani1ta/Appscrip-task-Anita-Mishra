@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 376px) {
+  body{
+    width: 100%;
+    overflow-x: hidden;
+  }
+}

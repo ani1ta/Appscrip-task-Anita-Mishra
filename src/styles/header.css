@@ -1,0 +1,125 @@
+.header {
+    border-bottom: 1px solid #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    padding-bottom: 30px; /* Add space below the header content */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 36px;
+    position: relative;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navbar--logo {
+    max-width: 150px;
+    height: 28px;
+    width: 28px;
+}
+
+.navbar--title {
+    color: #000000;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.navbar--icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.lang-translate {
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.arrow-left {
+    margin-left: 0;
+}
+
+.LIST {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90px; /* Increase this value to add space between the logo and the LIST */
+    left: 10%; /* Shift the LIST slightly to the left */
+    width: 80%; /* Optional: Adjust width to control the width of the LIST */
+    transform: translateX(-10%); /* Offset for centering */
+    padding: 10px 0; /* Add padding to create space above and below the LIST */
+}
+
+.LIST h4 {
+    margin: 0 20px; /* Adjust margin to space items out */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 376px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: relative;
+        
+    }
+    
+    .navbar--logo {
+        max-width: 120px;
+    }
+    
+    .navbar--title {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+    
+    .navbar--icon {
+        justify-content: center;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .arrow-left,
+    .lang-translate, .profile {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+    
+    .LIST {
+        display: none; /* Hide by default and show only when menuOpen is true */
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: none;
+        padding: 0;
+    }
+    
+    .LIST h4 {
+        margin: 10px 0;
+    }
+}
+
+

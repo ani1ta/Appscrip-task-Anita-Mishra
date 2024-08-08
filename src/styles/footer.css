@@ -1,0 +1,175 @@
+.footer {
+  padding: 30px 60px;
+  background-color: #000;
+  color: #fff;
+  border-top: 1px solid #333;
+ 
+}
+
+.footer-top, .footer-middle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-top .footer-section {
+  flex-basis: 45%;
+  padding: 20px 0;
+}
+
+.footer-middle .footer-section {
+  flex-basis: 30%;
+}
+
+.footer-bottom {
+  text-align: center;
+
+  padding-top: 20px;
+}
+
+.footer-section {
+  margin-right: 20px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section input[type="email"], .footer-section button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+.footer-section input[type="email"] {
+  padding: 8px 10px;
+  margin-right: 10px; 
+  width: calc(100% - 160px);
+}
+
+.footer-section button {
+  padding: 9px 20px;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-section .currency {
+  display: flex;
+  align-items: center;
+}
+
+.footer-section .currency img {
+  margin-right: 5px;
+}
+
+.footer-section .social-icons img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer-section .social-icons img:last-child {
+  margin-right: 0;
+}
+
+.callUs{
+  display: none;
+}
+
+/* Media query for screens 376px or less */
+@media (max-width: 376px) {
+  .footer {
+     width: 100%;
+    padding: 10px;
+  }
+
+  .footer-top, .footer-middle {
+    display: block;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    margin-right: 0;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+  }
+
+  .footer-section h4 {
+    font-size: 14px;
+  }
+
+  .footer-section p, .footer-section ul, .footer-section li {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .footer-section ul{
+    display: none;
+  }
+
+ .desc{
+  display: none;
+ }
+
+ .currencyHeading{
+  border-top: 2px solid #fff;
+  margin-top: 30px;
+ }
+
+ .contact h4{
+  margin-top: 10px;
+ }
+  .footer-section input[type="email"] {
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-section button {
+    width: 30%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+  }
+
+  .social-icons img{
+    display: none;
+  }
+
+  .footer-middle img{
+    width: 100%;
+  }
+
+  .contactUS{
+    display: none;
+  }
+
+  .callUs{
+    display: block;
+    
+  }
+
+  
+
+}
